@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="passwordScreen" class="welcome-screen">
+    <div class="welcome-content">
+        <h1>Private Space</h1>
+        <p>Enter the password to continue</p>
+
+        <input type="password" id="passwordInput" placeholder="Password">
+        <p id="errorMsg" class="error"></p>
+
+        <button onclick="checkPassword()">Unlock</button>
+    </div>
+</div>
+
+<!-- WELCOME SCREEN -->
+<div id="welcome" class="welcome-screen hidden">
+    <div class="welcome-content">
+        <h1>Welcome</h1>
+        <p>This space was made just for you</p>
+        <button onclick="enterSite()">Enter</button>
+    </div>
+</div>
+
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MAIN SITE -->
+<div id="site" class="hidden">
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">🤍</div>
+        <ul>
+            <li onclick="showPage('home')">Home</li>
+            <li onclick="showPage('gallery')">Gallery</li>
+            <li onclick="showPage('story')">Our Story</li>
+            <li onclick="showPage('letter')">Letter</li>
+            <li onclick="showPage('promises')">Promises</li>
+        </ul>
+        <button class="music-btn" onclick="toggleMusic()">Music</button>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <h1>The page dedicated to My Favorite Person</h1>
+        <p>Aditiii ❤️‍🩹💐</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="page">
+        <h1>Your Beautiful Moments</h1>
+        <div class="gallery">
+            <img src="her 1.jpg">
+            <img src="her 2.jpg">
+            <img src="her 3.jpg">
+            <img src="her 4.jpg">
+            <img src="her 5.jpg">
+            <img src="her 6.jpg"> 
+            <img src="her 7.jpg">
+            <img src="her 8.jpg">
+            <img src="her 9.jpg">
+            <img src="her 10.jpg">
+            <img src="her 11.jpg">
+            <img src="her 12.jpg">
+            <img src="her 13.jpg">
+            <img src="her 14.jpg">
+        </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="page">
+        <h1>Our Story</h1>
+        <div class="timeline">
+            <div class="event">The day we started talking 25 Nov</div>
+            <div class="event">The day I found out you liked me too 30 Nov</div>
+            <div class="event">The day i proposed you Friday Devember 19</div>
+       
+             <div class="event">Moments that felt safe when we were togetherin bus 24th Nov</div>
+                  <div class="event">My first gift to you Hair cliips and locket 26th dec</div>
+            <div class="event">Still being written…</div>
+        </div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="page">
+        <h1>Things I Never Said</h1>
+        <p class="letter-text">
+            I don’t always know how to say things,
+            but I hope you feel them.
+            You matter to me.
+        </p>
+    </section>
+
+    <!-- PROMISES -->
+    <section id="promises" class="page">
+        <h1>Things I Want To Do With You</h1>
+        <ul class="promises">
+            <li><input type="checkbox"> Watch sunsets together</li>
+            <li><input type="checkbox"> Grow together</li>
+            <li><input type="checkbox"> Support each other</li>
+            <li><input type="checkbox"> Create memories</li>
+            <li><input type="checkbox"> be together till the end</li>
+            <li><input type="checkbox"> Explore the world together</li>
+            <li><input type="checkbox"> love you everyday and every second if possible even after death</li>
+            <li><input type="checkbox"> Make you smile</li>
+            <li><input type="checkbox"> Be a better man for you</li>
+            <li><input type="checkbox"> Take care of you</li>
+            <li><input type="checkbox"> Marry you❤️‍🩹</li>
+        </ul>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
